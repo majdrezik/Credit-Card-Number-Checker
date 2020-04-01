@@ -3,16 +3,25 @@ import java.util.Scanner;
 public class CardNumberChecker {
 
 	final int MAX_LENGTH = 16;
-	
-	/*Luhn check to test whether or not a credit card number is valid:
+	/*
+	Luhn check to test whether or not a credit card number is valid:
+		Step 1a. For a card number with an even number of digits
+			(e.g., Visa or MasterCard), double alternating digits starting with the first digit in the sequence.
+		
+		Step 1b. For a card with an odd number of digits
+			(e.g., American Express), double alternating digits starting with the second digit in the sequence.
+		
+		Step 2. If the doubling resulted in a number with two digits, add them together to get a single digit number
+		
+		Step 3. Now go back to the original credit number and replace the digits that you doubled with the new value
+			 — either the doubled value, or the doubled value with the digits added together — and add it all up.
+			 
+		Step 4. Check to see if the sum is evenly divisible by 10 
+			(you can simply look to see whether or not it ends with a zero).
+			If the card number does not pass this check, then it is not a valid number.
+			If, on the other hand, it does pass, then it may be a valid number with valid
+	*/
 
-Step 1a. For a card number with an even number of digits (e.g., Visa or MasterCard), double alternating digits starting with the first digit in the sequence.
-Step 1b. For a card with an odd number of digits (e.g., American Express), double alternating digits starting with the second digit in the sequence.
-Step 2. If the doubling resulted in a number with two digits, add them together to get a single digit number
-Step 3. Now go back to the original credit number and replace the digits that you doubled with the new value — either the doubled value, or the doubled value with the digits added together — and add it all up.
-Step 4. Check to see if the sum is evenly divisible by 10 (you can simply look to see whether or not it ends with a zero).
-If the card number does not pass this check, then it is not a valid number. If, on the other hand, it does pass, then it may be a valid number with valid */
-	
 	public void askCard() {
 		Scanner sc = new Scanner(System.in);
 		int cardName = 0;
