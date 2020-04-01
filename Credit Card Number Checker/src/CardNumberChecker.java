@@ -19,7 +19,7 @@ public class CardNumberChecker {
 		Step 4. Check to see if the sum is evenly divisible by 10 
 			(you can simply look to see whether or not it ends with a zero).
 			If the card number does not pass this check, then it is not a valid number.
-			If, on the other hand, it does pass, then it may be a valid number with valid
+			If, on the other hand, it does pass, then it may be a valid number with valid credit report
 	*/
 
 	public void askCard() {
