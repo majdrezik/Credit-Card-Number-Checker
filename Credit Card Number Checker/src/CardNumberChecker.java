@@ -63,8 +63,15 @@ If the card number does not pass this check, then it is not a valid number. If, 
 	}
 	
 	public static void main(String[] args) {
-		int[] number = {4,9,0,4,8,3,9,8,2,2,4,8,5,9,5,9};
-		CardNumberChecker card = new CardNumberChecker();
-		System.out.println(card.checkCard(1, number));
+		// you can either call askCard() or initialize your card here, example:
+		//CardNumberChecker card = new CardNumberChecker();
+		//card.askCard();
+		// ------------------------------------ OR -------------------------------------
+		//int[] number = {4,9,0,4,8,3,9,8,2,2,4,8,5,9,5,9};
+		//System.out.println(card.checkCard(1, number));
 	}
 }
+
+
+
+
