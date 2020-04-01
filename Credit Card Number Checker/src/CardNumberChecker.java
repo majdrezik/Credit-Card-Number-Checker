@@ -9,7 +9,7 @@ public class CardNumberChecker {
 Step 1a. For a card number with an even number of digits (e.g., Visa or MasterCard), double alternating digits starting with the first digit in the sequence.
 Step 1b. For a card with an odd number of digits (e.g., American Express), double alternating digits starting with the second digit in the sequence.
 Step 2. If the doubling resulted in a number with two digits, add them together to get a single digit number
-Step 3. Now go back to the original credit number and replace the digits that you doubled with the new value — either the doubled value, or the doubled value with the digits added together — and add it all up.
+Step 3. Now go back to the original credit number and replace the digits that you doubled with the new value â€” either the doubled value, or the doubled value with the digits added together â€” and add it all up.
 Step 4. Check to see if the sum is evenly divisible by 10 (you can simply look to see whether or not it ends with a zero).
 If the card number does not pass this check, then it is not a valid number. If, on the other hand, it does pass, then it may be a valid number with valid */
 	
@@ -51,7 +51,7 @@ If the card number does not pass this check, then it is not a valid number. If, 
 		}
 
 	private boolean hasTwoDigits(int num) {
-		if(num > 9 && num < 19 )
+		if(num > 9 && num < 19 ) // any single int number multiplied by 2 is always smaller than 19, and greater than 9. 
 			return true;
 		return false;
 	}
